@@ -1,0 +1,10 @@
+<h1>Barrios</h1>
+
+<ul>
+  {% for b in barrios %}
+
+  <li>{{b}} [<a href="{% url 'editar_barrio' b.id%}">Editar</a>]</li>
+  <hr />
+  {% endfor %} [<a href="{% url 'index' %}">volver</a
+  >]
+</ul>
